@@ -1,0 +1,19 @@
+info:
+  name: Eventos Por ManagerId
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: /Eventos/ObtenerListaManagerId/:id
+  params:
+    - name: id
+      value: "169"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

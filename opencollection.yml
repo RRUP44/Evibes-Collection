@@ -1,0 +1,27 @@
+opencollection: 1.0.0
+
+info:
+  name: Evibes
+config:
+  proxy:
+    inherit: false
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+    disabled: true
+
+request:
+  variables:
+    - name: url
+      value: https://sys-evibes-api.azurewebsites.net/api/
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

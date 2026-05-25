@@ -1,0 +1,26 @@
+info:
+  name: Calificar Evento
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}Eventos/CalificarEvento"
+  body:
+    type: json
+    data: |-
+      {
+        "lngIdComentario": 0,
+        "lngIdEvento": 0,
+        "intIdUsuario": 0,
+        "numScore": 0,
+        "txtComentariosFinales": "string",
+        "fecRegistro": "2026-05-24T21:59:30.297Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

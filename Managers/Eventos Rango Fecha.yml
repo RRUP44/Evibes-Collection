@@ -1,0 +1,23 @@
+info:
+  name: Eventos Rango Fecha
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}Eventos/ObtenerListaManagerRango"
+  body:
+    type: json
+    data: |-
+      {
+        "fecInicio": "2026-05-24T22:29:51.631Z",
+        "fecFin": "2026-05-24T22:29:51.631Z",
+        "managerId": 169
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
